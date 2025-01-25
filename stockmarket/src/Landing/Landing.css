@@ -1,0 +1,9 @@
+.header{
+    display: flex;
+    justify-content: center;
+   text-align: center;
+}
+
+.header-title{
+    color: #036100;
+}
