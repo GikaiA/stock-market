@@ -27,13 +27,6 @@ const Login = () => {
 
   return (
     <div className="form-container">
-      <div className="sidebar">
-        <div className="sidenav-bgimage-wrapper">
-          <div className="sidenav-img">
-            <img src={stocks} alt="stocks-photo" className="side-img" />
-          </div>
-        </div>
-      </div>
       <form onSubmit={handleLogin} className="login-form">
         {error && <p className="error-message">{error}</p>}
         <h2 className="login-title">Login</h2>
@@ -57,7 +50,7 @@ const Login = () => {
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" className="login-button">Login</button>
       </form>
     </div>
   );
