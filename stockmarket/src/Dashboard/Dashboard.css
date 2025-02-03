@@ -1,0 +1,21 @@
+.portfolio-list{
+    list-style-type: none;
+}
+
+.portfolio-item{
+    color: black;
+}
+
+.nostocks-sentence{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 25px;
+}
+.remove-button{
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    font-size: 18px;
+    background-color: #036100;
+}

@@ -1,6 +1,5 @@
-/* Navbar container */
 .navbar {
-    background-color: lightgray; /* Blue background */
+    background-color: lightgray; 
     color: #036100;
     padding: 10px 20px;
     display: flex;
@@ -9,7 +8,6 @@
     
   }
   
-  /* Inner container for content alignment */
   .navbar-container {
     width: 100%;
     max-width: 1200px;
@@ -18,19 +16,16 @@
     align-items: center;
   }
   
-  /* Title styling */
   .navbar-title {
     font-size: 20px;
     font-weight: bold;
   }
   
-  /* Links container */
   .navbar-links {
     display: flex;
     gap: 20px;
   }
   
-  /* Link styles */
   .navbar-link {
     color: #036100;
     text-decoration: none;

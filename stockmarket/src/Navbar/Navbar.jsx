@@ -7,7 +7,7 @@ import { onAuthStateChanged } from "firebase/auth";
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   // Listen for changes in the authentication state
   useEffect(() => {
@@ -21,7 +21,7 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       await signOut(auth);
-      navigate('/')
+      navigate("/");
       console.log("User logged out.");
     } catch (error) {
       console.error("Logout error:", error.message);
@@ -42,6 +42,9 @@ const Navbar = () => {
               </Link>
               <Link to="/search" className="navbar-link">
                 Search
+              </Link>
+              <Link to="/news" className="navbar-link">
+                News
               </Link>
               <button onClick={handleLogout} className="logout-button">
                 Logout

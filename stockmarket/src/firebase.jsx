@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import {getAuth} from 'firebase/auth';
+import {getDatabase} from 'firebase/database';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -10,6 +11,7 @@ import {getAuth} from 'firebase/auth';
 const firebaseConfig = {
   apiKey: "AIzaSyBzJMPMewl8oOq75EMXyLsNY8ooRmHtcJY",
   authDomain: "stockmarket-2a5fd.firebaseapp.com",
+  databaseURL: "https://stockmarket-2a5fd-default-rtdb.firebaseio.com/",
   projectId: "stockmarket-2a5fd",
   storageBucket: "stockmarket-2a5fd.firebasestorage.app",
   messagingSenderId: "247598683024",
@@ -20,4 +22,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const db = getDatabase(app)
+
 export const auth = getAuth(app); // Firebase Authentication
+export {db} //firebase database

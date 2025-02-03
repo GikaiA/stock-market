@@ -50,3 +50,11 @@
   display: flex;
   justify-content: center;
 }
+
+.add-button{
+  cursor: pointer;
+  border-radius: 7px;
+  border: none;
+  font-size: 18px;
+  background-color: #036100;
+}
